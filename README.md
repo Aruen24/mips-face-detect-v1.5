@@ -46,11 +46,4 @@ SpringBoot RESTful API 脚手架
 - fastjson
 - druid
 
-## 捐赠
 
-如果你觉得这个项目很赞且对你有帮助的话，请我喝一杯咖啡呗:)
-![捐赠二维码](./docs/img/donation.png)
-
-## License
-
-[MIT](./LICENSE)
