@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "application.properties",
+      "type": "com.smdt.mips.faceDetect.utils.ConfigBean",
+      "sourceType": "com.smdt.mips.faceDetect.utils.ConfigBean"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

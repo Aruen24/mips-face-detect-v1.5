@@ -1,0 +1,83 @@
+## 基础配置文件
+#
+#spring:
+#  http:
+#    encoding:
+#      force: true
+#      charset: utf-8
+#      enabled: true
+#  mvc:
+#    throw-exception-if-no-handler-found: true     # 接口404时抛出异常
+#    async:
+#      request-timeout: -1
+#
+#  resources:
+#    add-mappings: false
+#  output:   # 检查终端是否支持ANSI，是的话就采用彩色输出
+#    ansi:
+#      enabled: detect
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver     # 数据库驱动
+#      url: jdbc:mysql://192.9.50.197:3306/seed?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useUnicode=true&useSSL=false     # 数据库链接
+#      username: wangyuanwen     # 数据库账号
+#      password: password     # 数据库密码
+#
+#server:
+#  port: 8082     # Springboot占用端口
+#  servlet:
+#    context-path: /v1     # 应用路径，可以通过设置路径来控制版本
+#  tomcat:
+#    uri-encoding: UTF-8
+##    max-threads: 200
+#    min-SpareThreads: 10     #初始化时创建的线程数
+#
+#
+#logging:
+#  level:
+#    # com.smdt.mips包下所有class以DEBUG级别输出
+#    com.smdt.mips: DEBUG
+#    # root日志以INFO级别输出
+#    root: INFO
+#
+#rocketmq:
+#  consumer:
+#    topics: fq_test
+#    tag: tag
+#    groupName: test2
+#    namesrvAddr: 192:9:50:197:9876
+#    batchMaxSize: 1
+#
+#
+## disruptor队列参数配置
+#disruptor:
+##  pic_buffer: 1048576
+#  pic_buffer: 4096
+#  pic_handler: 10
+#  url_buffer: 1048576
+#  url_handler: 1
+#
+## 模型路径
+#model:
+#  megdetect_model_path: /facedetect/models/megdetect_model/M_det_x86_v1.2.bin
+#  mtcnn_model_path: /facedetect/models/mtcnn_model
+#  min_size_megdetect: 40
+#  min_size_mtcnn: 40
+#  mtcnn_num: 12
+#
+## 请求图片url的超时时间（ms）
+#request:
+#  time_out: 500
+#
+## 认证签名
+#signature:
+#  init_url: http://192.9.50.197:19777
+#  redis_ip: 192.9.50.197
+#  redis_port: 6379
+#
+## 异步多线程
+##async:
+##  core_pool_size： 10
+##  max_pool_size： 20
+##  queue_capacity： 200
+##  space_time： 60
